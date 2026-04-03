@@ -4,8 +4,7 @@ A cute minimalistic desktop application that displays the current date!
 Includes:
 - day
 - month
-- font change (serif, sans-serif, handwriting, cursive, monospace)
-- changing positive quote each day
+- font change (serif, sans-serif, handwriting, handwriting bold, cursive, monospace)
 - to-do list for the day (resets everyday)
 
 ------

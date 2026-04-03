@@ -14,7 +14,11 @@ body {
 }
 
 .app {
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
 }
 
 button,
@@ -23,4 +27,31 @@ textarea,
 select {
     -webkit-app-region: no-drag;
     cursor: pointer;
+}
+
+.single-day-regular {
+    font-family: "Single Day";
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.to-do-button {
+    color: white;
+    font-family: "Single Day";
+    background: #2c93d2;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    height: 30px;
+    width: 182px;
+    text-align: center;
+}
+
+.day {
+    font-size: 48px;
+    color: white;
+    font-family: "Single Day";
+    font-weight: 400;
+    font-style: normal;
 }
