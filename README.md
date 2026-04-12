@@ -4,8 +4,7 @@ A cute minimalistic desktop application that displays the current date!
 Includes:
 - day
 - month
-- font change (serif, sans-serif, handwriting, handwriting bold, cursive, monospace)
-- to-do list for the day (resets everyday)
+- custom colours
 
 ------
 I made this project because it's perfect for beginners and I also want to learn how to code desktop applications rather than just websites.

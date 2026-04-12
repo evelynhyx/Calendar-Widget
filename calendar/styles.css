@@ -42,7 +42,7 @@ select {
 }
 
 
-.to-do-button {
+.header {
     color: white;
     font-family: "Single Day";
     font-size: 0.8rem;
@@ -57,7 +57,7 @@ select {
     text-align: center;
 }
 
-.to-do-button:hover {
+.header:hover {
     border: 2px dashed #bae5ff;
 }
 
