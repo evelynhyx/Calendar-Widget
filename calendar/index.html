@@ -11,7 +11,14 @@
 
     <body>
         <div class="app">
-            <button class="header">My Calendar</button>
+            <div class="header">
+                <button class="title">My Calendar</button>
+                <select id="theme" onchange="themeSelector(this.value)">
+                    <option value="blue">Blue</option>
+                    <option value="pink">Pink</option>
+                    <option value="beige">Beige</option>
+                </select>
+            </div>
             <div id="calendar">
                 <div id="day"></div>
                 <div id="month"></div>

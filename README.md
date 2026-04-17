@@ -4,7 +4,7 @@ A cute minimalistic desktop application that displays the current date!
 Includes:
 - day
 - month
-- custom colours
+- custom colour themes (blue, pink, beige)
 
 ------
 I made this project because it's perfect for beginners and I also want to learn how to code desktop applications rather than just websites.
