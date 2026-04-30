@@ -1,0 +1,36 @@
+name: Build Electron App
+
+on:
+  push:
+    tags:
+      - 'v*'   # triggers when you push version tags like v1.0.0
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Make app
+        run: npm run make
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: out/make/**/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
