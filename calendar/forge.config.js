@@ -19,12 +19,6 @@ module.exports = {
       },
     },
     {
-      name: "@electron-forge/maker-dmg",
-      config: {
-        name: 'Calendar',
-      }
-    },
-    {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
     },
