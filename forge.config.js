@@ -17,19 +17,12 @@ module.exports = {
         setupExe: 'CalendarSetup.exe',
         setupIcon: 'assets/calendar.ico',
       },
+      platforms: ['win32'],
     },
     {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
-    },
-    {
-      name: '@electron-forge/maker-deb',
-      config: {},
-    },
-    {
-      name: '@electron-forge/maker-rpm',
-      config: {},
-    },
+    }
   ],
   plugins: [
     {
