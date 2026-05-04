@@ -14,8 +14,11 @@ module.exports = {
       name: '@electron-forge/maker-squirrel',
       config: {
         name: 'Calendar',
+        productName: 'Calendar',
         setupExe: 'CalendarSetup.exe',
         setupIcon: 'assets/calendar.ico',
+        description: 'A cute minimalistic desktop application that displays the current date!',
+        author: 'Evelyn',
       },
       platforms: ['win32'],
     },
