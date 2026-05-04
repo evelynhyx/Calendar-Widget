@@ -3,8 +3,8 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 
 module.exports = {
   packagerConfig: {
-    name: 'Calendar',
-    executableName: 'Calendar',
+    name: 'MyCalendar',
+    executableName: 'MyCalendar',
     icon: 'assets/calendar',
     asar: true,
   },
@@ -13,9 +13,9 @@ module.exports = {
     {
       name: '@electron-forge/maker-squirrel',
       config: {
-        name: 'Calendar',
-        productName: 'Calendar',
-        setupExe: 'CalendarSetup.exe',
+        name: 'MyCalendar',
+        productName: 'MyCalendar',
+        setupExe: 'MyCalendarSetup.exe',
         setupIcon: 'assets/calendar.ico',
         description: 'A cute minimalistic desktop application that displays the current date!',
         author: 'Evelyn',
@@ -24,6 +24,11 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-zip',
+      config: {
+        name: 'MyCalendar',
+        productName: 'MyCalendar',
+        setupIcon: 'assets/calendar.ico',
+      },
       platforms: ['darwin'],
     }
   ],
